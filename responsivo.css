@@ -1,0 +1,1693 @@
+@media screen and (max-width: 1980px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    
+      html,
+      body {
+        overflow-x: hidden;
+      }
+}
+
+@media screen and (max-width: 900px){
+
+    .section1 {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+      }
+      
+      .txt{
+        text-align: center;
+      }
+
+    .hamburguer {
+        display: block;
+        z-index: 2;
+        margin-right: 40px;
+      }
+    
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(14, 14, 15);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 1; 
+      }
+    
+      .nav-list a {
+        font-size: 20px;
+        opacity: 0;
+      }
+
+      .habilidades {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 7%;
+      }
+    
+      .nav-list a:hover {
+        color: floralwhite;
+        border: none;
+      }
+    
+      .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+      }
+    
+      .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+      }
+    
+      .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+      }
+    
+      .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+      }
+    
+      .nav.active {
+        overflow: hidden;
+      }
+    
+      .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+      }
+    
+      .nav.active .nav-list a {
+        opacity: 1;
+      }
+    
+      .nav.active .hamburguer {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+      }
+    
+      .nav.active .hamburguer::before {
+        transform: rotate(135deg);
+      }
+    
+      .nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+}
+
+@media screen and (min-width: 300px) {
+
+  .first {
+    font-size: 30px;
+  }
+      
+  .second {
+     font-size: 18px;
+  }
+
+  .section1 img{
+    margin-top: 30px;
+    height: 340px;
+    width: 260px;
+  }
+
+  .sobremim {
+    margin-top: 150px;
+    text-align:center;
+    width: 90%;
+    font-size: 12px;
+  }
+      
+  .sobremim h2 {
+    font-size: 35px;
+  }
+
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+      
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+      
+  .card {
+    margin-top: 5%;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+  }
+      
+  .card img {
+    width: 70px;
+  }
+
+  #projetos {
+    margin: 200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+      
+  .projects {
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+  }
+      
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+      
+  #sobre {
+    scroll-margin-top: 120px; 
+  }
+      
+  #habilid {
+    scroll-margin-top: 200px; 
+  }
+      
+  #projetos {
+    scroll-margin-top: 20px; 
+  }
+}
+
+@media screen and (min-width: 390px) {
+
+  .first {
+    font-size: 35px;
+  }
+      
+  .second {
+     font-size: 20px;
+  }
+
+  .section1 img{
+    margin-top: 30px;
+    height: 360px;
+    width: 280px;
+  }
+
+  .sobremim {
+    margin-top: 150px;
+    text-align:center;
+    width: 90%;
+    font-size: 12px;
+  }
+      
+  .sobremim h2 {
+    font-size: 35px;
+  }
+
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+      
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+      
+  .card {
+    margin-top: 5%;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+  }
+      
+  .card img {
+    width: 70px;
+  }
+
+  #projetos {
+    margin: 200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+      
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+  }
+      
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+      
+  #sobre {
+    scroll-margin-top: 175px; 
+  }
+      
+  #habilid {
+    scroll-margin-top: 200px; 
+  }
+      
+  #projetos {
+    scroll-margin-top: 20px; 
+  }
+}
+
+@media screen and (min-width: 410px) {
+
+    .section1{
+        margin-top: 80px;
+    }
+
+    .first {
+      font-size: 38px;
+    }
+    
+    .second {
+      font-size: 23px;
+    }
+
+    .section1 img{
+      margin-top: 40px;
+      height: 360px;
+      width: 280px;
+    }
+
+    .sobremim {
+      margin-top: 150px;
+      text-align:center;
+      width: 90%;
+      font-size: 12px;
+    }
+    
+    .sobremim h2 {
+      font-size: 35px;
+    }
+
+    .hab {
+      margin-top: 150px;
+      text-align: center;
+      font-size: 30px;
+      font-family: "Lobster", sans-serif;
+      font-weight: bold;
+      color: #180f4a;
+    }
+    
+    .habilidades h3 {
+      margin-top: 25px;
+    }
+    
+    .card {
+      margin-top: 5%;
+      font-size: 16px;
+      width: 200px;
+      height: 200px;
+    }
+    
+    .card img {
+      width: 70px;
+    }
+
+    #projetos {
+      margin: 150px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: flex-start; 
+      min-height: 100vh;
+      background-size: cover;
+    }
+    
+    .projects {
+      margin-top: 150px;
+      align-items: center;
+      text-align: center;
+      font-size: 45px;
+    }
+    
+    .box {
+      margin-top: -20px;
+      width: 200px; 
+      max-width: 800px; 
+      height: 200px; 
+    }
+
+    .box span img{
+      width: 80%;
+      height: 80%;
+    }
+
+    #topo {
+      scroll-margin-top: 0px;
+    }
+    
+    #sobre {
+      scroll-margin-top: 220px; 
+    }
+    
+    #habilid {
+      scroll-margin-top: 200px; 
+    }
+    
+    #projetos {
+      scroll-margin-top: 20px; 
+    }
+}
+
+@media screen and (min-width: 430px) {
+
+  .section1{
+      margin-top: 80px;
+  }
+
+  .first {
+    font-size: 38px;
+  }
+  
+  .second {
+    font-size: 23px;
+  }
+
+  .section1 img{
+    margin-top: 40px;
+    height: 360px;
+    width: 280px;
+  }
+
+  .sobremim {
+    margin-top: 150px;
+    text-align:center;
+    width: 90%;
+    font-size: 12px;
+  }
+  
+  .sobremim h2 {
+    font-size: 35px;
+  }
+
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+ 
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    margin-top: 5%;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .card img {
+    width: 70px;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 220px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 200px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 20px; 
+  }
+}
+
+@media screen and (min-width: 540px) {
+
+  .section1{
+      margin-top: 60px;
+  }
+
+  .first {
+    font-size: 42px;
+  }
+  
+  .second {
+    font-size: 26px;
+  }
+
+  .section1 img{
+    margin-top: 40px;
+    height: 380px;
+    width: 300px;
+  }
+
+  .sobremim {
+    margin-top: 150px;
+    text-align:center;
+    width: 90%;
+    font-size: 15px;
+  }
+  
+  .sobremim h2 {
+    font-size: 35px;
+  }
+
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+ 
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    margin-top: 5%;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .card img {
+    width: 70px;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 107px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 200px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 20px; 
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+.section1{
+    margin-top: 70px;
+}
+
+.first {
+  font-size: 45px;
+}
+
+.second {
+  font-size: 28px;
+}
+
+.section1 img{
+  margin-top: 40px;
+  height: 390px;
+  width: 300px;
+}
+
+.sobremim {
+  margin-top: 150px;
+  text-align:center;
+  width: 90%;
+  font-size: 15px;
+}
+
+.sobremim h2 {
+  font-size: 35px;
+}
+
+.hab {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lobster", sans-serif;
+  font-weight: bold;
+  color: #180f4a;
+}
+
+.habilidades h3 {
+  margin-top: 25px;
+}
+
+.card {
+  margin-top: 5%;
+  font-size: 16px;
+  width: 200px;
+  height: 200px;
+}
+
+.card img {
+  width: 70px;
+}
+
+#projetos {
+  margin: 150px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.projects {
+  margin-top: 150px;
+  align-items: center;
+  text-align: center;
+  font-size: 45px;
+}
+
+.box {
+  margin-top: -20px;
+  width: 200px; 
+  max-width: 800px; 
+  height: 200px; 
+}
+
+.box span img{
+  width: 80%;
+  height: 80%;
+}
+
+#topo {
+  scroll-margin-top: 0px;
+}
+
+#sobre {
+  scroll-margin-top: 180px; 
+}
+
+#habilid {
+  scroll-margin-top: 240px; 
+}
+
+#projetos {
+  scroll-margin-top: 60px; 
+}
+}
+
+@media screen and (min-width: 630px) {
+
+  .section1{
+      margin-top: 70px;
+  }
+  
+  .first {
+    font-size: 50px;
+  }
+  
+  .second {
+    font-size: 30px;
+  }
+  
+  .section1 img{
+    margin-top: 40px;
+    height: 420px;
+    width: 320px;
+  }
+  
+  .sobremim {
+    margin-top: 150px;
+    text-align:center;
+    width: 90%;
+    font-size: 15px;
+  }
+  
+  .sobremim h2 {
+    font-size: 35px;
+  }
+  
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+  
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    margin-top: 5%;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .card img {
+    width: 70px;
+  }
+  
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+  
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+  
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 180px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 240px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 60px; 
+  }
+}
+
+@media screen and (min-width: 760px) {
+
+  .section1{
+    margin-top: 80px;
+  }
+
+  .logo{
+   font-size: 25px;
+  }
+
+  .first{
+    font-size: 55px;
+  }
+
+  .second{
+    font-size: 35px;
+  }
+
+  .section1 img{
+   margin-top: 40px;
+   height: 450px;
+   width: 350px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 16px;
+  }
+
+  .sobremim h2 {
+    font-size: 40px;
+  }
+
+  .hab {
+   margin-top: 150px;
+   text-align: center;
+   font-size: 40px;
+   font-family: "Lobster", sans-serif;
+   font-weight: bold;
+   color: #180f4a;
+  }
+
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+
+  .card {
+   margin-top: 2%;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 250px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 300px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 90px; 
+  }
+}
+
+@media screen and (min-width: 820px) {
+
+  .section1 {
+    flex-direction: column;
+    margin: auto;
+    margin-top: 180px;
+  }
+
+  .logo{
+   font-size: 25px;
+  }
+
+  .section1 img{
+   margin-top: 40px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 20px;
+  }
+
+  .sobremim h2 {
+    font-size: 45px;
+  }
+
+  .habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    justify-content: center;
+    font-size: 26px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin: 1%;
+    border: 1px solid #5c5b5f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card img {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 80%;
+    height: 80%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 220px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 280px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 120px; 
+  }
+
+  .box span img{
+    width: 250%;
+    height: 130%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .nav{
+    height: 120px;
+  }
+
+  .nav-list a{
+    font-size: 20px;
+  }
+
+  .section1{
+    margin-top: 180px;
+  }
+
+  .logo{
+   font-size: 30px;
+  }
+
+  .first{
+    font-size: 55px;
+  }
+
+  .second{
+    font-size: 35px;
+  }
+
+  .section1 img{
+   margin-top: 40px;
+   height: 500px;
+   width: 400px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 20px;
+  }
+
+  .sobremim h2 {
+    font-size: 45px;
+  }
+
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+   }
+ 
+   .habilidades h3 {
+     margin-top: 25px;
+   }
+ 
+   .card {
+    margin-top: 2%;
+    justify-content: center;
+    font-size: 20px;
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    margin: 1%;
+   }
+
+   .card img {
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 250%;
+    height: 130%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 300px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 350px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 190px; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .nav{
+    height: 120px;
+  }
+
+  .nav-list a{
+    font-size: 20px;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 10%;
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+  .txt{
+    text-align: center;
+  }
+  
+  .first {
+    font-weight: 900;
+    color: #180f4a;
+    padding: 0%;
+    margin: 0%;
+    font-size: 50px;
+  }
+  
+  .second {
+    font-weight: 900;
+    color: #5c5b5f;
+    padding: 0%;
+    margin: 0%;
+    font-size: 30px;
+  }
+
+  .section1 img{
+   margin-top: 40px;
+   height: 400px;
+   width: 300px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 20px;
+  }
+
+  .sobremim h2 {
+    font-size: 45px;
+  }
+
+  .hab {
+    margin-top: 303px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+ 
+   .habilidades {
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    justify-content: center;
+    font-size: 26px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin: 1%;
+    border: 1px solid #5c5b5f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card img {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 250%;
+    height: 130%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 150px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 280px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 0px; 
+  }
+}
+
+@media screen and (min-width: 1170px) {
+
+  .nav{
+    height: 120px;
+  }
+
+  .nav-list a{
+    font-size: 20px;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 7%;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .txt{
+    text-align: center;
+  }
+  
+  .first {
+    font-weight: 900;
+    color: #180f4a;
+    padding: 0%;
+    margin: 0%;
+    font-size: 70px;
+  }
+  
+  .second {
+    font-weight: 900;
+    color: #5c5b5f;
+    padding: 0%;
+    margin: 0%;
+    font-size: 40px;
+  }
+  .section1 img{
+   margin-top: 40px;
+   height: 500px;
+   width: 400px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 20px;
+  }
+
+  .sobremim h2 {
+    font-size: 45px;
+  }
+
+  .hab {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+   }
+ 
+   .habilidades h3 {
+     margin-top: 25px;
+   }
+ 
+   .card {
+    margin-top: 2%;
+    justify-content: center;
+    font-size: 20px;
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    margin: 1%;
+   }
+
+   .card img {
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 250%;
+    height: 130%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 250px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 300px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 190px; 
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  .nav{
+    height: 120px;
+  }
+
+  .nav-list a{
+    font-size: 20px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 10%;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .txt{
+    text-align: center;
+  }
+  
+  .first {
+    font-weight: 900;
+    color: #180f4a;
+    padding: 0%;
+    margin: 0%;
+    font-size: 70px;
+  }
+  
+  .second {
+    font-weight: 900;
+    color: #5c5b5f;
+    padding: 0%;
+    margin: 0%;
+    font-size: 40px;
+  }
+
+  .section1 img{
+   margin-top: 40px;
+   height: 500px;
+   width: 400px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 20px;
+  }
+
+  .sobremim h2 {
+    font-size: 45px;
+  }
+
+  .hab {
+    margin-top: 303px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+ 
+   .habilidades {
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    justify-content: center;
+    font-size: 26px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin: 1%;
+    border: 1px solid #5c5b5f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card img {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 250%;
+    height: 130%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 250px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 300px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 190px; 
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .nav{
+    height: 120px;
+  }
+
+  .nav-list a{
+    font-size: 20px;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 10%;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  .txt{
+    text-align: center;
+  }
+  
+  .first {
+    font-weight: 900;
+    color: #180f4a;
+    padding: 0%;
+    margin: 0%;
+    font-size: 70px;
+  }
+  
+  .second {
+    font-weight: 900;
+    color: #5c5b5f;
+    padding: 0%;
+    margin: 0%;
+    font-size: 40px;
+  }
+
+  .section1 img{
+   margin-top: 40px;
+   height: 600px;
+   width: 500px;
+  }
+
+  .sobremim {
+   margin-top: 150px;
+   text-align:center;
+   width: 90%;
+   font-size: 20px;
+  }
+
+  .sobremim h2 {
+    font-size: 45px;
+  }
+
+  .hab {
+    margin-top: 303px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: #180f4a;
+  }
+
+   .habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .habilidades h3 {
+    margin-top: 25px;
+  }
+  
+  .card {
+    justify-content: center;
+    font-size: 26px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin: 1%;
+    border: 1px solid #5c5b5f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card img {
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projetos {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    background-size: cover;
+  }
+  
+  .projects {
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  .box {
+    margin-top: -20px;
+    width: 200px; 
+    max-width: 800px; 
+    height: 200px; 
+  }
+
+  .box span img{
+    width: 250%;
+    height: 130%;
+  }
+
+  #topo {
+    scroll-margin-top: 0px;
+  }
+  
+  #sobre {
+    scroll-margin-top: 250px; 
+  }
+  
+  #habilid {
+    scroll-margin-top: 300px; 
+  }
+  
+  #projetos {
+    scroll-margin-top: 100px; 
+  }
+}

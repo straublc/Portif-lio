@@ -1,0 +1,145 @@
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="dev.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Lucas Straub</title>
+  </head>
+
+  <body>
+    
+    <header>
+      <nav class="nav">
+        <a href="#top" class="logo"><h2>STRAUB</h2></a>
+
+        <button class="hamburguer"></button>
+
+        <ul class="nav-list">
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#habilid">HABILIDADES</a></li>
+          <li><a href="#projetos">PROJETOS</a></li>
+          <li><a href="#contatos">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section1">
+      
+      <div class="txt">
+        <h2 class="first">LUCAS STRAUB</h2>
+        <h2 class="second">ESTAGIÁRIO DE TI </h2>
+      </div>
+      <img height="650px" width="500" src="lucas.jpeg">
+      
+    </section>
+
+    <section class="sobremim animate" data-anime="right">
+      <div id="sobre" class="txt-headline">
+        <h2>SOBRE MIM</h2>
+        <br>
+        <p>
+          Estudante de Análise e Desenvolvimento de Sistemas, sempre tive uma grande paixão pela área de tecnologia e estou sempre em busca de novos desafios que possam agregar ao meu conhecimento e desenvolvimento profissional.
+        </p>
+          <br>
+        <p>
+          Servi 3 anos à Marinha do Brasil no corpo de Fuzileiros Navais, tendo comigo o aprendizado de hierarquia e disciplina e costumes militares. Atuei a maior parte da minha trajetória na Seção de Pessoal do Batalhão, onde tive responsabilidade pelos demais soldados do setor.
+        </p>
+          <br>
+        <p>
+          Estagiário no COPPEAD UFRJ, atuando na área de infraestrutura de redes e suporte. Participei na  gerência e organização dos servidores 
+          AD (Active Directory), realizei limpeza, formatação e manutenção nos computadores, mapeando redes, atendimento ao usuário e configuração de softwares.
+        </p>
+          <br>
+        <p>
+          Tenho perfil proativo, sou detalhista e gosto de trabalhar em equipe,
+          sempre buscando soluções eficientes e inovadoras para os problemas.
+          Além disso, possuo boas habilidades de comunicação, o que facilita o
+          trabalho colaborativo e a interação com diferentes áreas dentro de um
+          projeto.
+        </p>
+      </div>
+    </section>
+
+    <section class="hab animate" data-anime="left">
+      <h2>HABILIDADES</h2>
+
+      <div id="habilid" class="habilidades">
+        <div class="card animate" data-anime="left">
+          <img src="html.png">
+          <h3>HTML</h3>
+        </div>
+
+        <div class="card animate" data-anime="left">
+          <img src="cfd.png">
+          <h3>CSS</h3>
+        </div>
+
+        <div class="card animate" data-anime="left">
+          <img src="js.png">
+          <h3>JAVA SCRIPT</h3>
+        </div>
+
+        <div class="card animate" data-anime="left">
+          <img src="python.png" height="100px">
+          <h3>PYTHON</h3>
+        </div>
+
+        <div class="card animate" data-anime="left">
+          <img src="bd.png">
+          <h3>BANCO DE DADOS</h3>
+        </div>
+
+        <div class="card animate" data-anime="left">
+          <img src="manut.png">
+          <h3>MANUTENÇÃO</h3>
+        </div>
+      </div>
+    </section> 
+
+    <section id="projetos" data-anime="left" class="animate">
+      
+      <h2 class="projects animate" data-anime="left">PROJETOS</h2>
+      <div class="box" style="transform: perspective(1000px) rotateY(353deg);"> 
+        <span style="--i: 1"><a href=""><img src="3.png"></a></span>
+        <span style="--i: 2"><a href="https://bancoaluguel.netlify.app"><img src="conceitual.png"></a></span>
+        <span style="--i: 3"><a href="https://soundlive.netlify.app/"><img src="soundlive.jpg"></a></span>
+        <span style="--i: 4"><a href="https://lucas-calculadora.netlify.app/"><img src="calculadora.jpg"></a></span>
+        <span style="--i: 5"><a href="https://soccerquest.netlify.app/"><img src="soccerquest.jpg"></a></span>
+        <span style="--i: 6"><a href="https://testejogov.netlify.app/"><img src="jgvelha.jpg"></a></span>
+      </div>
+    </section>
+
+    <footer id="contatos">
+      <div class="imgRod">
+        <a href="https://www.linkedin.com/in/lucasstraub/"><img width="50" src="linkedin.png"></a>
+        <a href="https://github.com/lucasstraub7"><img width="50" src="gith.png"></a>
+        <a href="mailto:lucasstraub7@hotmail.com"><img width="50" src="gmail.png"></a>
+        <a href="https://bit.ly/lucasstraub">
+        <img width="50" src="wpp.png"></a>
+      </div>
+      <p><b style="color: white">© Todos os direitos reservados.</b></p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      let box = document.querySelector(".box");
+      window.onmousemove = function (e) {
+        let x = e.clientX / 3;
+        box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+      };
+    </script>
+  
+</body>
+</html>
